@@ -1,31 +1,35 @@
-# Requisitos funcionais
+# Functional requirements
 
-  - [x] O usuário deve poder criar uma nova transação;
-  - [x] O usuário deve poder obter um resumo da sua conta;
-  - [x] O usuário deve poder listar todas as transações que já ocorreram;
-  - [x] O usuário deve poder visualizar uma transação unica;
+  - [x] User must be able to create a new transaction;
+  - [x] User must be able to obtain a summary of their account;
+  - [x] User should be able to list all transactions that have ever taken place;
+  - [x] User must be able to view a single transaction;
 
-# Regras de negocios
+# Business rules
 
-  - [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtrairá;
-  - [x] Deve ser possível identificarmos o usuário entre as requisições
-  - [x] O usuário só pode visualizar transações o qual ele criou;
+  - [x] The transaction can be of the credit type which will add to the total amount, or debit which will subtract;
+  - [x] It must be possible to identify the user among the requests;
+  - [x] User can only view transactions which he created;
+  
+  # Endpoints
 
+  - Create transaction - POST - /transactions
+  - List all transactions - GET - /transactions
+  - account summary - GET - /transactions/summary
+ 
 
-# Requisitos não funcionais
+# Unit test
+  - Unit of your application
 
-# Teste unitarios
-  - Unidade da sua aplicação
+# Integration test
+  - Communication between two or more units
 
-# Teste de integração
-  - comunicação entre duas ou mais unidades
+# E2E -> End to End
+  - Simulates a user operating the application
+  - Front end example
+    - Opens the login page, enter the text xxxx@gmail.com in the field with email id, click the x button
+  - Back end example
+    - calls HTTP, WebSockets
 
-# E2E -> ponta a ponta
-  - Simula um usuário operando a aplicação
-  - Exemplo front-end
-    - Abre a página de login, digite o texto xxxx@gmail.com no campo com id email, clique no botão x
-  - Exemplo back-end
-    - chamadas HTTP, WebSockets
-
-# Pirâmide de testes
-  -E2E (não dependem de nenhuma tecnologia, arquitetura) - são testes lentos
+# Test pyramid
+  -E2E (do not depend on any technology, architecture) - are slow tests
