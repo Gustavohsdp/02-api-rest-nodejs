@@ -23,7 +23,7 @@
 # E2E -> ponta a ponta
   - Simula um usuário operando a aplicação
   - Exemplo front-end
-    - Abre a página de login, digite o texto gustavohsdp@gmail.com no campo com id email, clique no botão x
+    - Abre a página de login, digite o texto xxxx@gmail.com no campo com id email, clique no botão x
   - Exemplo back-end
     - chamadas HTTP, WebSockets
 
